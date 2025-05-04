@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+body {
+  background-color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+body.bg-mito {
+  background-image: url(/assets/img/mito-bg.png);
+  background-size: cover;
+}
+
+body.bg-insanity {
+  background-image: url(/assets/img/bg-insanity.png);
+  background-size: cover;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  height: 600px;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(6px);
+  color: #e3e3e3;
+}
+
+.infos,
+.nav-bar {
+  padding: 20px;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.tab-buttons {
+  display: flex;
+  gap: 40px;
+}
+
+.tab-btn {
+  background: transparent;
+  border: none;
+  color: #e3e3e3;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tab-contents{
+    display: flex;
+}
+
+.content {
+  display: none;
+}
+
+.content.show {
+  display: flex;
+}
+
+.content-img {
+  width: 100%;
+}
+
+.tab-btn.active {
+  font-weight: bold;
+  border-bottom: 2px solid #e3e3e3;
+}
+
+.btn-visuais button {
+  background-color: rgba(255, 255, 255, 0.278);
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-visuais button:hover {
+  background-color: #f0f0f0;
+}
+
+.content.show {
+  display: flex;
+  gap: 30px;
+}
